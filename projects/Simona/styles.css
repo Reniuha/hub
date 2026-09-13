@@ -1,0 +1,502 @@
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+	overflow-x: hidden;
+	font-family: sans-serif;
+}
+
+.topSection,
+.colorSection {
+    display: flex;
+}
+
+.topSection {
+    flex-direction: column;
+    letter-spacing: .05em;
+    font-size: 38px;
+    font-weight: 900;
+    height: 100vh;
+}
+
+.colorSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    width: 100%;
+}
+
+
+
+
+.slider {
+    position: relative;
+    width: 700px;
+    height: 700px;
+    flex: 0 0 600px;
+    margin: 0;
+}
+
+.slider input {
+    display: none;
+}
+
+.slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slides img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.box > img {
+    width: 700px;
+    height: 700px;
+    object-fit: contain;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.slider input:nth-of-type(1):checked ~ .slides img:nth-child(1) {
+    opacity: 1;
+}
+
+.slider input:nth-of-type(2):checked ~ .slides img:nth-child(2) {
+    opacity: 1;
+}
+
+.slider input:nth-of-type(3):checked ~ .slides img:nth-child(3) {
+    opacity: 1;
+}
+
+.slider input:nth-of-type(4):checked ~ .slides img:nth-child(4) {
+    opacity: 1;
+}
+
+.slider input:nth-of-type(5):checked ~ .slides img:nth-child(5) {
+    opacity: 1;
+}
+
+.slider input:nth-of-type(6):checked ~ .slides img:nth-child(6) {
+    opacity: 1;
+}
+
+
+.slider-controls {
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 8px;
+}
+
+.slider-controls label {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.2s ease;
+}
+
+.slider-controls label:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.slider input:nth-of-type(1):checked ~ .slider-controls label:nth-child(1),
+.slider input:nth-of-type(2):checked ~ .slider-controls label:nth-child(2),
+.slider input:nth-of-type(3):checked ~ .slider-controls label:nth-child(3),
+.slider input:nth-of-type(4):checked ~ .slider-controls label:nth-child(4),
+.slider input:nth-of-type(5):checked ~ .slider-controls label:nth-child(5),
+.slider input:nth-of-type(6):checked ~ .slider-controls label:nth-child(6) {
+    background-color: rgb(0, 5, 92);
+    opacity: 1;
+    transform: scale(1.4);
+}
+
+
+
+
+.box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.textBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 5px solid rgba(37, 106, 244, 0.379);
+    background-color: rgba(255, 255, 255, 0.135);
+    color: white;
+    width: 550px;
+    min-height: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.textBox h2 {
+    font-size: 3.5rem;
+}
+
+.textBox p {
+    font-size: 1.2rem;
+}
+
+
+
+.sky h1 {
+	background-color: rgba(106, 151, 255, 0.115);
+	margin-top: 160px;
+	text-align: center;
+	color: white;
+	font-size: 4.5rem;
+	font-weight: 500;
+	transform: scaleX(-1); /*puts it back cause shi is reversed*/
+}
+
+.wave-text span {
+    display: inline-block;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.wave-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.wave-text span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.wave-text span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.wave-text span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.wave-text span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.wave-text span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.wave-text span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.wave-text span:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+.wave-text span:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+.wave-text span:nth-child(10) {
+    animation-delay: 0.9s;
+}
+
+.wave-text span:nth-child(11) {
+    animation-delay: 1s;
+}
+
+.wave-text span:nth-child(12) {
+    animation-delay: 1.1s;
+}
+
+.wave-text span:nth-child(13) {
+    animation-delay: 1.2s;
+}
+
+.wave-text span:nth-child(14) {
+    animation-delay: 1.3s;
+}
+
+.wave-text span:nth-child(15) {
+    animation-delay: 1.4s;
+}
+
+.wave-text span:nth-child(16) {
+    animation-delay: 1.5s;
+}
+
+.wave-text span:nth-child(17) {
+    animation-delay: 1.6s;
+}
+
+.wave-text span:nth-child(18) {
+    animation-delay: 1.7s;
+}
+
+.wave-text span:nth-child(19) {
+    animation-delay: 1.8s;
+}
+
+.wave-text span:nth-child(20) {
+    animation-delay: 1.9s;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+
+.sky {
+	background-image: url("assets/video/clouds.gif");
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    flex: 1;
+	transform: scaleX(-1); /*for the gif, aka background*/
+}
+
+.sun {
+    position: absolute;
+    top: 0;
+    left: 0;
+	margin: -60px;
+    width: 180px;
+    height: 180px;
+    background-color: #FFDE00;
+    border-radius: 50%;
+    box-shadow:
+        0 0 0 20px #FFDE0080,
+        0 0 0 40px #FFDE0040,
+        0 0 0 60px #FFDE0020,
+        0 0 0 80px #FFDE0010,
+        0 0 0 100px #FFDE0000,
+        0 0 40px 100px #FFDE0010;
+
+    animation:
+        sunrise 2s infinite linear forwards,
+        rays 2s 2s infinite linear;
+
+    z-index: 2;
+}
+
+@keyframes sunrise {
+    0% {
+        box-shadow: none;
+    }
+}
+
+@keyframes rays {
+    0% {
+        box-shadow:
+            0 0 0 0 #FFDE0080,
+            0 0 0 20px #FFDE0080,
+            0 0 0 40px #FFDE0040,
+            0 0 0 60px #FFDE0020,
+            0 0 0 80px #FFDE0010,
+            0 0 40px 100px #FFDE0010;
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 20px #FFDE0080,
+            0 0 0 40px #FFDE0040,
+            0 0 0 60px #FFDE0020,
+            0 0 0 80px #FFDE0010,
+            0 0 0 100px #FFDE0000,
+            0 0 40px 100px #FFDE0010;
+    }
+}
+
+
+.oceanStart {
+    position: relative;
+    width: 100%;
+    height: 160px;
+    flex-shrink: 0;
+    background-color: #4fa1d2;
+}
+
+.iceberg {
+    position: absolute;
+    right: 75px;
+    top: -80px;
+
+	z-index: 1;
+}
+
+.boatMovement {
+    position: absolute;
+    left: 5%;
+    top: -130px;
+    z-index: 2;
+}
+
+.boatWrapper.sinking .boat {
+    animation: sink 2s ease-in forwards;
+}
+
+.boat {
+    display: block;
+    width: 200px;
+}
+
+@keyframes sink {
+    from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(220px) rotate(35deg);
+        opacity: 0;
+    }
+}
+
+.explosion {
+    position: absolute;
+    width: 180px;
+    height: 250px;
+    border: none;
+    display: none;
+    z-index: 5;
+}
+
+
+
+footer {
+    width: 100vw;
+    height: 600px;
+    background-image: url("assets/images/footer.png");
+    opacity: 0.4;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    mask-image: linear-gradient(to top, black, transparent);
+}
+
+.footerText {
+    position: relative;
+    margin-top: -450px;
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+}
+
+.footerText a {
+    display: inline-block;
+    color: red;
+    text-decoration: none;
+}
+
+.footerText a:hover {
+    transform: scale(1.3);
+}
+
+
+@media (max-width: 1800px) {
+    .box {
+        gap: 40px;
+    }
+
+    .slider {
+        width: 550px;
+        height: 550px;
+        flex: 0 0 550px;
+    }
+
+    .box > img {
+        width: 550px;
+        height: 550px;
+    }
+
+    .textBox {
+        width: 450px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .box {
+        gap: 30px;
+    }
+
+    .slider {
+        width: 450px;
+        height: 450px;
+        flex: 0 0 450px;
+    }
+
+    .box > img {
+        width: 450px;
+        height: 450px;
+    }
+
+    .textBox {
+        width: 400px;
+        padding: 20px;
+    }
+
+    .textBox h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .box {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .slider {
+        width: 500px;
+        height: 500px;
+        flex: 0 0 500px;
+    }
+
+    .box > img {
+        width: 500px;
+        height: 500px;
+    }
+
+    .textBox {
+        width: 500px;
+    }
+}
+
+
+.tehe img {
+    position: relative;
+    bottom: 260px;
+    left: 50px;
+    width: 750px;
+    opacity: 0.7;
+    transform: rotate(10deg)
+}
+
+/*good enuf*/

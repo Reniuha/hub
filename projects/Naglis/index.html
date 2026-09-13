@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summer Journal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app" class="App">
+    <aside class="sidebar">
+      <div class="brand">
+        <span id="badge" class="badge">LOG</span>
+        <span id="page-counter" class="counter">01/37</span>
+      </div>
+
+      <div class="navigation-hints">
+        <p>← → or ↑ ↓ to navigate</p>
+        <p>scroll anywhere</p>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <h1 id="title" class="title"></h1>
+
+      <div class="layout-grid">
+        <div class="media-container" id="media-container">
+          <img id="page-image" src="" alt="Media cover" class="hidden">
+        </div>
+
+        <div class="text-body">
+          <div id="content-list" class="content-list"></div>
+          <div id="rating" class="rating-badge"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

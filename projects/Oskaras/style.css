@@ -1,0 +1,310 @@
+:root{
+    --background: rgba(25, 25, 25, 1);
+    --nav: rgba(128, 0, 0, 1)
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: Typewriter;
+    src: url(files/fonts/typewriter.ttf);
+}
+
+/* HEAD */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial;
+    color: white;
+    background: url(files/images/background.png);
+    background-size: 100vw 100vh;
+    max-width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* BODY */
+
+h1{
+    text-align: center;
+}
+
+i{
+    color: rgb(200, 0, 0);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    backdrop-filter: blur(0.25vmax) brightness(50%);
+    z-index: 0;
+    min-height: 100vh;
+}
+
+.page-section{
+    display: flex;
+    margin: auto;
+    width: 90vw;
+    min-height: 10vh;
+    padding: 10px;
+}
+
+.page-style{
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+}
+
+/* WEBSITE BOX (for color flash) */
+
+.website-box{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+/* FLASHLIGHT (EASTER EGG) */
+
+.flashlight{
+    display: none;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+    border-radius: 10vmax;
+    backdrop-filter: brightness(1000%) saturate(200%);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.easter-egg{
+    display: none;
+    position: absolute;
+    width: 10vmax;
+    height: 5vmax;
+    color: black;
+    z-index: 2;
+    text-align: center;
+    align-content: center;
+    font-family: Typewriter;
+    top: 0%;
+    right: 0%;
+}
+
+.easter-egg:hover{
+    cursor: pointer;
+}
+
+/* TITLE */
+
+.name{
+    display: flex;
+    justify-content: center;
+}
+
+.name .letters{
+    display: flex;
+    font-family: Typewriter;
+    transition: transform 0.25s;
+    color: white;
+    user-select: none;
+    font-size: 8vw;
+    justify-content: space-evenly;
+    margin: 1vw;
+}
+
+.name .letters *{
+    transition: color 0.25s
+}
+
+.click-title .letters:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.click-title .letters:hover > .first-letter{
+    color: red;
+}
+
+/* HOME */
+
+.home{
+    display: flex;
+    flex-direction: column;
+}
+
+.season{
+    display: flex;
+    background: rgba(0, 0, 0, 0.5);
+    transition: height 0.35s;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.season-text{
+    display: flex;
+    justify-content: center;
+    font-family: roboto;
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-size: 48px;
+    margin: 10px;
+    align-content: center;
+}
+
+.season-text .arrow{
+    transition: transform 0.25s;
+}
+
+.season-text:hover{
+    cursor: pointer;
+}
+
+.episodes{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.first-ep{
+    background: url(files/images/one/1.png);
+    background-size: 100% 100%;
+}
+
+.second-ep{
+    background: url(files/images/one/2.png);
+    background-size: 100% 100%;
+}
+
+.third-ep{
+    background: url(files/images/one/3.png);
+    background-size: 100% 100%;
+}
+
+.four-ep{
+    background: url(files/images/one/4.png);
+    background-size: 100% 100%;
+}
+
+.episodes div{
+    transition: 0.125s filter, 0.125s transform;
+    filter: brightness(0.75);
+    width: 300px;
+    height: 700px;
+    margin: 0 10px;
+}
+
+.episodes div:hover{
+    filter: brightness(1.25);
+    transform: scale(0.85) skew(0deg, 5deg);
+    cursor: pointer;
+}
+
+/* INFO */
+
+.info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.info-cards{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card{
+    position: relative;
+    width: 240px;
+    height: 480px;
+    background: rgba(128, 128, 128, 0.25);
+    border: 3px solid rgba(255, 255, 255, 0.05);
+    border-radius: 25px;
+}
+
+.image{
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.card-title{
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    margin: 5px;
+}
+
+.card-text{
+    word-wrap: break-word;
+    font-style: italic;
+    margin: 5px;
+}
+
+.mark .image{
+    background: url(files/images/cast/mark.png);
+    background-size: 100% 100%;
+}
+
+.jack .image{
+    background: url(files/images/cast/jack.png);
+    background-size: 100% 100%;
+}
+
+.isaac .image{
+    background: url(files/images/cast/isaac.png);
+    background-size: 100% 100%;
+}
+
+/* SOCIALS */
+
+.socials{
+    justify-content: center;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.social-icon{
+    width: 128px;
+    height: 128px;
+    transition: 0.25s filter, 0.25s rotate;
+    filter: saturate(0.5) brightness(0.75);
+}
+
+.social-icon:hover{
+    filter: saturate(1) brightness(1);
+    rotate: 5deg;
+}
+
+.youtube{
+    background: url(files/images/socials/youtube.png);
+    background-size: 100% 100%;
+}
+
+@media only screen and (max-width: 660px){
+    .episodes{
+        height: 2800px;
+        flex-direction: column;
+        gap: 5px;
+    }
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Summer 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <a href="#home" class="logo">MY SUMMER 2026</a>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#portugal">Portugal</a>
+                <a href="#photos">Photos</a>
+                <a href="#gaming">Gaming</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- heroin -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>My Summer<br>Holidays</h1>
+            <p>A collection of my favorite moments from summer.</p>
+        </div>
+    </section>
+
+
+    <!-- intro -->
+    <section class="section intro">
+        <div class="intro-image">
+            <img src="images/portugal/portugal01.jpg" alt="Portugal">
+        </div>
+
+        <div class="intro-text">
+            <p class="section-label">ABOUT MY SUMMER</p>
+            <h2>A Summer To Remember</h2>
+
+            <p>
+                This summer I spent time with friends, played games and
+                traveled to Portugal. I took a lot of photos along the way,
+                so I decided to put some of my favorite moments together.
+            </p>
+
+            <p>
+                One of the main highlights of my summer was visiting Lisbon,
+                Portugal.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Portugal -->
+    <section id="portugal" class="section portugal">
+
+        <div class="section-heading">
+            <p class="section-label">MY TRIP</p>
+            <h2>Portugal</h2>
+            <p>Exploring Lisbon and seeing a different part of Europe.</p>
+        </div>
+
+        <div class="carousel">
+            <button class="carousel-button previous" onclick="changePortugal(-1)">&#10094;</button>
+
+            <div class="carousel-image">
+                <img id="portugal-image" src="images/portugal/portugal13.jpg" alt="Portugal">
+            </div>
+
+            <button class="carousel-button next" onclick="changePortugal(1)">&#10095;</button>
+        </div>
+
+        <div class="photo-info">
+            <h3 id="portugal-title">Lisbon, Portugal</h3>
+            <p id="portugal-description">
+                A photo from my trip to Lisbon.
+            </p>
+            <span id="portugal-counter">1 / 5</span>
+        </div>
+
+    </section>
+
+
+    <!-- Portugal videos -->
+    <section class="section portugal-videos">
+
+        <div class="section-heading">
+            <p class="section-label">VIDEOS FROM THE TRIP</p>
+            <h2>Portugal Videos</h2>
+            <p>Some videos I recorded during my trip to Lisbon.</p>
+        </div>
+
+        <div class="video-grid">
+
+            <video controls>
+                <source src="images/portugal-videos/portugal-video1.mp4" type="video/mp4">
+            </video>
+
+            <video controls>
+                <source src="images/portugal-videos/portugal-video2.mp4" type="video/mp4">
+            </video>
+
+        </div>
+
+    </section>
+
+
+ <!-- photo gallery -->
+<section id="photos" class="section">
+
+    <div class="section-heading">
+        <p class="section-label">RANDOM PHOTOS</p>
+        <h2>More Portugal</h2>
+        <p>Some random photos.</p>
+    </div>
+
+    <div class="photo-grid">
+
+        <img src="images/gallery/portugal05.JPG" alt="Portugal photo" draggable="false" onclick="openPhoto(this.src)">
+        <img src="images/gallery/portugal06.JPG" alt="Portugal photo" draggable="false" onclick="openPhoto(this.src)">
+        <img src="images/gallery/portugal08.JPG" alt="Portugal photo" draggable="false" onclick="openPhoto(this.src)">
+        <img src="images/gallery/portugal10.JPG" alt="Portugal photo" draggable="false" onclick="openPhoto(this.src)">
+        <img src="images/gallery/portugal11.JPG" alt="Portugal photo" draggable="false" onclick="openPhoto(this.src)">
+        <img src="images/gallery/portugal12.JPG" alt="Portugal photo" draggable="false" onclick="openPhoto(this.src)">
+        <img src="images/gallery/portugal14.JPG" alt="Portugal photo" draggable="false" onclick="openPhoto(this.src)">
+        <img src="images/gallery/portugal15.JPG" alt="Portugal photo" draggable="false" onclick="openPhoto(this.src)">
+
+    </div>
+
+
+    <!-- <div class="photo-grid">
+
+        <label>
+            <input type="checkbox">
+            <img src="images/gallery/portugal05.JPG" alt="Portugal photo">
+        </label>
+
+        <label>
+            <input type="checkbox">
+            <img src="images/gallery/portugal06.JPG" alt="Portugal photo">
+        </label>
+
+        <label>
+            <input type="checkbox">
+            <img src="images/gallery/portugal08.JPG" alt="Portugal photo">
+        </label>
+
+        <label>
+            <input type="checkbox">
+            <img src="images/gallery/portugal10.JPG" alt="Portugal photo">
+        </label>
+
+        <label>
+            <input type="checkbox">
+            <img src="images/gallery/portugal11.JPG" alt="Portugal photo">
+        </label>
+
+        <label>
+            <input type="checkbox">
+            <img src="images/gallery/portugal12.JPG" alt="Portugal photo">
+        </label>
+
+        <label>
+            <input type="checkbox">
+            <img src="images/gallery/portugal14.JPG" alt="Portugal photo">
+        </label>
+
+        <label>
+            <input type="checkbox">
+            <img src="images/gallery/portugal15.JPG" alt="Portugal photo">
+        </label>
+
+    </div> -->
+
+</section>
+
+
+    <!-- European herring gull -->
+    <section class="section seagull-section">
+
+        <div class="seagull-text">
+            <p class="section-label" style="background-color: #fffaf0; width: fit-content; padding: 5px;">AN UNEXPECTED VISITOR</p>
+            <h2>The European Herring Gull</h2>
+
+            <p>
+                During the summer, a European herring gull started hitting
+                my window with its beak. I managed to take some photos
+                and record a video of it.
+            </p>
+        </div>
+
+        <div class="seagull-media">
+
+            <img src="images/seagull/seagull1.jpg" alt="European herring gull">
+
+            <video controls>
+                <source src="images/seagull/seagull-video.mp4" type="video/mp4">
+            </video>
+
+        </div>
+
+    </section>
+
+
+    <!-- GAMING -->
+    <section id="gaming" class="section gaming">
+        <div class="section-heading">
+            <p class="section-label">FREE TIME</p>
+            <h2>Games I Played</h2>
+            <p>Some of the games I spent time playing this summer.</p>
+        </div>
+
+        <div class="games-grid">
+
+            <div class="game-card">
+                <img src="images/games/bf6.jpg" alt="bf6">
+                <h3>Battlefield 6</h3>
+            </div>
+
+            <div class="game-card">
+                <img src="images/games/pz.jpg" alt="pz">
+                <h3>Project Zomboid</h3>
+            </div>
+
+            <div class="game-card">
+                <img src="images/games/mc.jpg" alt="minecraft">
+                <h3>Minecraft</h3>
+            </div>
+
+            <div class="game-card">
+                <img src="images/games/shc.png" alt="shc">
+                <h3>Stronghold Crusader</h3>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- favorite moments -->
+    <section class="section favorites">
+        <div class="section-heading">
+            <p class="section-label">HIGHLIGHTS</p>
+            <h2>My Favorite Moments</h2>
+        </div>
+
+        <div class="favorite-grid">
+
+            <div class="favorite-card">
+                <img src="images/portugal/portugal02.jpg" alt="Favorite summer memory">
+                <h3>Favorite Trip</h3>
+                <p>Visiting Lisbon, Portugal.</p>
+            </div>
+
+            <div class="favorite-card">
+                <img src="images/seagull/seagull1.jpg" alt="Seagull">
+                <h3>Funniest Moment</h3>
+                <p>The European herring gull attacking my window.</p>
+            </div>
+
+            <div class="favorite-card">
+                <img src="images/portugal/portugal00.jpg" alt="Summer photo">
+                <h3>Favorite Photo</h3>
+                <p>One of my favorite photos from the summer.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ending -->
+    <section class="ending">
+        <p class="section-label">SUMMER 2026</p>
+        <h2>That Was My Summer</h2>
+        <p>Trips, friends, games and plenty of memories.</p>
+    </section>
+
+
+    <footer>
+        <p>My Summer Holidays 2026</p>
+    </footer>
+
+    <!-- enlarged photo -->
+    <div id="photo-viewer" onclick="closePhoto()">
+        <img id="viewer-image" src="" alt="Enlarged photo" draggable="false">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
