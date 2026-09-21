@@ -13,6 +13,7 @@ const names = [
 ];
 
 const existingProjects = [
+  "Armandas",
   "Giedrius",
   "Justas",
   "Naglis",
